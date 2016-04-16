@@ -1,91 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-header {
-    background-color:black;
-    color:white;
-    text-align:center;
-    padding:5px;   
-}
-nav {
-    line-height:30px;
-    background-color:#eeeeee;
-    height:300px;
-    width:100px;
-    float:left;
-    padding:5px;        
-}
-h1{
-  font-size: 36px;
-letter-spacing: -1.25px;
-line-height: 1;
-font-weight: 300;
-  color: rgb(60, 60, 80);
-}
-h2{
-  color: rgb(60, 60, 80);
-  
-}
-section {
 
-    float:left;
-    padding-left:50px;
-    padding-right:50px;    
-    font-family: Helvetica, Arial, sans-serif;
-font-size: 16px;
-line-height: 1.5;
-font-weight: 300;
-}
-footer {
-    background-color:black;
-    color:white;
-    clear:both;
-    text-align:center;
-    padding:5px;     
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Slate is a responsive theme for GitHub Pages" />
 
-}
-</style>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-<header>
-<h1 style="color:white">Sentitool</h1>
-<h3>Major Project - Information Retreival and Extraction</h3>
+    <title>SentientX</title>
+  </head>
 
-</header>
+  <body>
 
-<div style="padding:100px;
-    background-color: #fff7ef; font-family:  Helvetica">
-<div >
-<h2>Understand the sentiment of user reviews and provide useful information for the end-user as well as the product manufacturer regarding public opinion of the product.</h2>
-</div>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/m-chanakya/sentientX">View on GitHub</a>
 
-<section>
-<h1>Abstract</h1>
-<p align="justify">Sentiment Analysis is a widely addressed Natural Language Processing task wherein the semantic orientation of a text unit is adjudged. However, a major challenge in Sentiment Analysis is the identification of entities towards which the opinion is expressed. Sentitool ( Aspect Based Sentiment Analysis system ) receives as input a set of texts ( product reviews) discussing a particular entity (e.g., a new model of a mobile phone). The systems attempt to detect the main (e.g., the most frequently discussed) aspects (features) of the entity (e.g., battery, screen) and to estimate the average sentiment of the texts per aspect (e.g., how positive or negative the opinions are on average for each aspect). It involves the extraction of the aspect term from a sentence and secondly the polarity of the opinion corresponding to that aspect is adjudged. We adopted an approach based on Probabilistic Graphical Models(PGMs). A linear-chain CRF is trained with features based on word vectors and text processing techniques(POS, dependency parse) to sequentially label the aspect term in a sentence. SVM classifier then identities the polarity corresponding to the aspect, with features based on cosine similarity with words from sentiwordnet.</p>
-</section>
+          <h1 id="project_title">SentientX</h1>
+          <h2 id="project_tagline">Information Retreival and Extraction Major Project</h2>
 
-<section>
-<h1>What is Aspect Based Sentiment Analysis ?</h1>
-<p align="justify">Sentiment analysis (also known as opinion mining) refers to the use of natural language processing, text analysis and computational linguistics to identify and extract subjective information in source materials.                                
+          <section id="downloads">
+            <a class="zip_download_link" href="#">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="#">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Problem Statement</h1>
+        <p>Understand the sentiment of user reviews and provide useful information for the end-user as well as the product manufacturer regarding public opinion of the product.</p>
+
+        <h3>Abstract</h3>
+
+        <p>Sentiment Analysis is a widely addressed Natural Language Processing task wherein the semantic orientation of a text unit is adjudged. However, a major challenge in Sentiment Analysis is the identification of entities towards which the opinion is expressed. Sentitool ( Aspect Based Sentiment Analysis system ) receives as input a set of texts ( product reviews) discussing a particular entity (e.g., a new model of a mobile phone). The systems attempt to detect the main (e.g., the most frequently discussed) aspects (features) of the entity (e.g., battery, screen) and to estimate the average sentiment of the texts per aspect (e.g., how positive or negative the opinions are on average for each aspect). It involves the extraction of the aspect term from a sentence and secondly the polarity of the opinion corresponding to that aspect is adjudged. We adopted an approach based on Probabilistic Graphical Models(PGMs). A linear-chain CRF is trained with features based on word vectors and text processing techniques(POS, dependency parse) to sequentially label the aspect term in a sentence. SVM classifier then identities the polarity corresponding to the aspect, with features based on cosine similarity with words from sentiwordnet.</p>
+
+        <h3>What is Aspect Based Sentiment Analysis ?</h3>
+
+        <p>Sentiment analysis (also known as opinion mining) refers to the use of natural language processing, text analysis and computational linguistics to identify and extract subjective information in source materials.                                
 ABSA refers to determining the opinions or sentiments expressed on different features or aspects of entities, e.g., of a cell phone, a digital camera, or a bank.                 
-A feature or aspect is an attribute or component of an entity, e.g., the screen of a cell phone, the service for a restaurant, or the picture quality of a camera. </p>
+A feature or aspect is an attribute or component of an entity, e.g., the screen of a cell phone, the service for a restaurant, or the picture quality of a camera.</p>
 
- <img align="center" src="img1.png" alt="img1" > 
-</section>
-<section>
-<h1>Applications
-</h1>
-<p>Parameter-based sentiment analysis of user reviews would allow us to give a detailed feedback to the manufacturer. Such a feedback would help them understand if the general public is unhappy with a certain aspect of their product and hence can help them modify it accordingly. For example, users may be unhappy with the screen resolution in the new iPhone 6s mobile). It can also be used to develop new products with emphasis on those particular parameters.
 
-Such an analysis also helps us provide a targeted recommendation system for the users. For example, we can provide suggestions for products with good sentiment on screen resolution to users who might have complained about the same in their previous reviews.
-</p>
-</section>
+<img src="images/img4.png">
+        <h3> Applications</h3>
+        <p>Parameter-based sentiment analysis of user reviews would allow us to give a detailed feedback to the manufacturer. Such a feedback would help them understand if the general public is unhappy with a certain aspect of their product and hence can help them modify it accordingly. For example, users may be unhappy with the screen resolution in the new iPhone 6s mobile). It can also be used to develop new products with emphasis on those particular parameters.
 
-<section>
-  <h1> Approach</h1>
-  <p>
+Such an analysis also helps us provide a targeted recommendation system for the users. For example, we can provide suggestions for products with good sentiment on screen resolution to users who might have complained about the same in their previous reviews.</p>
+
+
+        <h3> Approach</h3>
+        <p>
 The project can be divided into three major tasks namely data extraction and processing, aspect and its category detection and assigning sentiment polarity.
 </p>
 <ul><li>
@@ -95,15 +63,18 @@ Processing step converts unstructured data (raw html) into a structured format (
 </li><li>
 
 Aspect Category (Entity and Attribute). Identify every entity E and attribute A pair E#A towards which an opinion is expressed in the given text. E and A should be chosen from predefined inventories of Entity types (e.g. laptop, keyboard, operating system, restaurant, food, drinks) and Attribute labels (e.g. performance, design, price, quality) per domain. Each E#A pair defines an aspect category of the given text.
-</li><li>
+</li>
+
+<img src="images/img3.png">
+
+<li>
 
 Sentiment Polarity. Each identified E#A pair of the given text has to be assigned a polarity, from a set P = {positive, negative, neutral}. 
 </li></ul>
 </p>
-</section>
 
-<section>
-  <h1>Challenges </h1>
+
+  <h3>Challenges </h3>
 <p><ul><li>
 Storing and retrieving huge corpus efficiently.
 
@@ -117,17 +88,30 @@ If the review is comparative in nature i.e talks about multiple products in a si
 </li><li>Problems with anaphora resolution. Example – “The new iPhone has a lithium battery. It is really bad”, here its difficult for the system to answer the question what does the “it” refer to ? 
 </li></ul></p>
 
-</section>
+<h3>Conclusion</h3>
+<img src="images/img1.png">
 
-<section>
-  <h1>Conclusion</h1>
+<img src="images/img2.png">
+<h5 align = "center"> A review and its aspect based sentiment analysis </h5>
+<br>
 <p>  We ran our model on Flipkart Review dataset crawled by us. The tool works perfectly on any type of reviews single or compound reviews. It generates summaries listing all the aspects and their overall polarity. The outcome is be average sentiment for each aspect of an entity.
 </p>
+        
+  <a href ="http://www.slideshare.net/ShikhaJain81/customer-review-analytics">Slideshare Link</a><br>
+  <a href="https://www.youtube.com/watch?v=ae8Zqz1UzBs&feature=youtu.be">Youtube Link</a>
 
-</section>
+  <h4>Tags</h4>
+  <p>
+  #IIITH #IIIT-H #Major_Project #IRE #Information_Retrieval_and_Extraction #ABSA #Aspect_based_sentiment_analysis #product_review #flipkart</p>
+    </div>
 
-<footer style="padding:none">
-</footer>
-</div>
-</body>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Page maintained by <a href="https://github.com/shikha">Jason Costello</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+  </body>
 </html>
